@@ -1,0 +1,207 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Add your custom styling here */
+/* For mobile responsiveness */
+@media (max-width: 640px) {
+  .md\:group-hover\:block.group:hover .group-hover\:block {
+    display: block !important;
+  }
+}
+
+/* Custom button styling */
+.register-button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.register-button:hover {
+  background-color: #3182ce; /* Blue shade for hover */
+  color: white;
+}
+
+/* Vertically align login link and register button */
+.right-menu-align {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adjust the gap as needed */
+}
+
+/* Styling for navigation items */
+.nav-item {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Add more styling as needed */
+
+/* Media query for screens smaller than 640px (adjust the breakpoint as needed) */
+@media (max-width: 640px) {
+  /* Hide the dropdown items initially */
+  .nav-item-dropdown {
+    display: none;
+  }
+
+  /* Show the dropdown items when the burger menu is clicked */
+  .burger-menu:checked + .nav-item-dropdown {
+    display: block;
+  }
+
+  /* Hide the regular navigation items */
+  .nav-item {
+    display: none;
+  }
+
+  /* Show the "snap" title */
+  .nav-item-snap {
+    display: block;
+  }
+
+  /* Styling for the burger menu */
+  .burger-menu {
+    display: none;
+  }
+
+  .burger-menu-label {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .burger-menu-icon {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+  }
+
+  .burger-menu-icon:before,
+  .burger-menu-icon:after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s;
+  }
+
+  .burger-menu-icon:before {
+    top: 6px;
+  }
+
+  .burger-menu-icon:after {
+    top: 12px;
+  }
+
+  /* Rotate the burger menu icon when clicked */
+  .burger-menu:checked + .nav-item-dropdown .burger-menu-icon:before {
+    transform: rotate(-45deg) translate(-3px, 0);
+  }
+
+  .burger-menu:checked + .nav-item-dropdown .burger-menu-icon:after {
+    transform: rotate(45deg) translate(-3px, 0);
+  }
+
+  .burger-menu:checked + .nav-item-dropdown .burger-menu-icon {
+    background-color: transparent;
+  }
+
+  /* style.css */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Global styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation menu */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-item {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #007bff;
+}
+
+
+
+/* Hide burger menu in non-mobile view */
+@media (min-width: 641px) {
+  .burger-menu-container {
+    display: none;
+  }
+
+  .burger-menu-image {
+    display: none; /* Hide burger icon in non-mobile view */
+  }
+}
+
+/* Main content */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.main-content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive utility classes */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+}
+

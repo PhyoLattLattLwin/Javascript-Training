@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <div id="app">
+      <nav class="flex justify-between items-center py-4 px-8 bg-white-500 text-black">
+        <!-- Left Menu -->
+        <div class="flex space-x-2 md:space-x-6 mb-2 md:mb-0">
+          <h1 class="nav-item text-3xl font-semibold">snap</h1>
+
+          <div class="relative group nav-item">
+            <span class="hover:text-blue-300 cursor-pointer">Features</span>
+
+            <div class="hidden group-hover:block bg-white w-40 py-2 mt-2 rounded-lg shadow-lg">
+              <div class="flex items-center mb-2">
+                <img src="./icon-todo.svg" alt="Todo List Icon" class="w-4 h-4 mr-2">
+                <a href="#" class="text-sm hover:text-blue-300">Todo list</a>
+              </div>
+
+              <div class="flex items-center mb-2">
+                <img src="./icon-calendar.svg" alt="Calendar Icon" class="w-4 h-4 mr-2">
+                <a href="#" class="text-sm hover:text-blue-300">Calendar</a>
+              </div>
+
+              <div class="flex items-center mb-2">
+                <img src="./icon-reminders.svg" alt="Reminders Icon" class="w-4 h-4 mr-2">
+                <a href="#" class="text-sm hover:text-blue-300">Reminders</a>
+              </div>
+
+              <div class="flex items-center">
+                <img src="./icon-planning.svg" alt="Planning Icon" class="w-4 h-4 mr-2">
+                <a href="#" class="text-sm hover:text-blue-300">Planning</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="relative group nav-item">
+            <span class="hover:text-blue-300 cursor-pointer">Company</span>
+            <div class="hidden group-hover:block bg-white w-30 py-2 mt-2 rounded-lg shadow-lg">
+              <a class="text-sm text-left block px-4 py-2 hover:bg-blue-200" href="#">History</a>
+              <a class="text-sm text-left block px-4 py-2 hover:bg-blue-200" href="#">Our Team</a>
+              <a class="text-sm text-left block px-4 py-2 hover:bg-blue-200" href="#">Blog</a>
+            </div>
+          </div>
+
+          <a class="nav-item hover:text-blue-300" href="#">Career</a>
+          <a class="nav-item hover:text-blue-300" href="#">About</a>
+        </div>
+        
+        <!-- Right Menu -->
+        <div class="flex space-x-6 right-menu-align">
+          <a class="nav-item hover:text-blue-300" href="#">Login</a>
+          <button class="register-button px-4 py-2 rounded">Register</button>
+        </div>
+
+      </nav>
+  
+      <!-- Main Content -->
+      <div class="flex justify-center items-center h-screen">
+        <!-- Content on the left side -->
+        <div class="w-1/2 p-8 text-left">
+          <div class="mb-4">
+            <span class="text-4xl font-semibold text-black">Make</span><br>
+            <span class="text-4xl font-semibold text-black">Remote Work</span>
+          </div>
+          
+          <p class="text-sm mb-6 text-gray-500" style="font-family: sans-serif;">
+            Get your team in sync, no matter your location. 
+            Streamline processes, create team rituals, and watch productivity soar.
+          </p>
+          
+          <button class="bg-black text-white px-6 py-2 rounded-lg hover:bg-blue-600">Learn more</button>
+
+          <div class="mt-4 py-20 text-left">
+            <img src="./client-databiz.svg" alt="Image 1" class="w-auto h-auto inline-block">
+            <img src="./client-audiophile.svg" alt="Image 2" class="w-auto h-auto inline-block ml-4">
+            <img src="./client-meet.svg" alt="Image 3" class="w-auto h-auto inline-block ml-4">
+            <img src="./client-maker.svg" alt="Image 4" class="w-auto h-auto inline-block ml-4">
+          </div>
+        </div>
+
+        <!-- Image on the right side -->
+        <div class="w-2/5">
+          <img src="./image-hero-desktop.png" alt="Image Alt Text" class="w-46 h-auto">
+        </div>
+        
+        
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
